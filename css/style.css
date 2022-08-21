@@ -240,6 +240,20 @@ strong {
   font-weight: 600;
 }
 
+@font-face {
+  font-family: 'Wide awake';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Wide awake"), url("Wide_awake.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Wide awake Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Wide awake Black"), url("Wide_awake_Black.woff") format("woff");
+}
+
 .fnt-16 {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
