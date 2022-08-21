@@ -1,0 +1,66 @@
+//cores
+
+$branco: #fff;
+$azul-piscina: #02d0d2;
+$azul-escuro: #05050c;
+$azul-medio: #020204;
+$azul-hb: #272475;
+$roxo: #bd289e;
+$q-preto: #050505;
+$verde: #1ab912;
+
+//Fontes
+
+$fonte-1: 'Wide awake';
+$fonte-2: 'Roboto', sans-serif;
+
+//Mixins de fontes
+
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto + em
+}
+
+@mixin ws($size) {
+  font-family: $fonte-1;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Wide awake'), url('Wide_awake.woff') format('woff');
+  @if $size == 186 {
+    font-size: em(186);
+    line-height: em(198, 186);
+  }
+}
+
+@mixin tipo-2($size) {
+  font-family: $fonte-2;
+  @if $size == 16 {
+    font-size:  em(16);
+    line-height: em(28, 16);
+  }
+  @else if $size == 14 {
+    font-size: em(14);
+    line-height: em(16, 14)
+  }
+  @else if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18)
+  }
+  @else if $size == 24 {
+    font-size: em(24);
+    line-height: em(36, 24)
+  }
+  @else if $size == 36 {
+    font-size: em(36);
+    line-height: em(48, 36)
+  }
+  @else if $size == 56 {
+    font-size: em(56);
+    line-height: em(68, 56)
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}

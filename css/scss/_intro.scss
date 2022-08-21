@@ -1,0 +1,112 @@
+.introducao {
+  width: 100%;
+  height: 519px;
+  background: url("../img/banner-principal.jpg") no-repeat center center;
+  text-align: center;
+  background-size: cover;
+  padding: 120px 0;
+  position: relative;
+  z-index: 1;
+  @include d(s){
+    width: 100%;
+    height: 550px;
+    background: url("../img/banner-principal-mobile.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 130px 10px 20px 10px;
+  }
+  
+}
+
+.tablet-banner {
+  width: 100%;
+  height: 687px;
+  background: url('../img/tablet-banner-v2.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  @include d(s) {
+    height: 550px;
+    background: none;
+  }
+}
+
+.btn-master {
+  border: 3px solid $azul-piscina;
+  width: 180px;
+  padding: 15px 0;
+  font-size: 24px;
+  text-decoration: none;
+  color: $branco;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $azul-piscina;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover, &:focus, &:active:before {
+    color: $branco;
+  }
+  &:hover:before, &:focus:before, &:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+  @include d(s) {
+    width: 135px;
+  }
+}
+
+.titulo-ws {
+  @include ws(186);
+  color: $azul-piscina;
+}
+.titulo-sub {
+  @include tipo-2(24);
+  font-style: italic;
+  text-transform: uppercase;
+  &:before {
+    content: "< ";
+    color: $roxo;
+  }
+  &:after {
+    content: " >";
+    color: $roxo;
+  }
+}
+
+.img-tbl {
+  float: left;
+}
+
+.img-tablet {
+  position: absolute;
+  right: 0;
+  top: 100px;
+}

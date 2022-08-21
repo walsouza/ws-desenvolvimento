@@ -1,0 +1,97 @@
+.contato {
+  width: 100%;
+  background: $azul-escuro;
+  padding: 60px 0 30px 0;
+  h1 {
+    color: $roxo;
+    display: block;
+    &:after {
+    content: "";
+	display: block;
+	width: 200px;
+	height: 3px;
+	background: $roxo;
+	margin: 10px 0 10px 0;
+    }
+  }
+  span {
+    color: $azul-piscina;
+  }
+  @include d(s){
+    padding: 15px;
+  }
+}
+.ico-social {
+  width: 35px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.margin {
+  margin-right: 15px;
+}
+.dd-pss {
+  margin-top: 30px;
+  p {
+    display: inline-block;
+  }
+}
+.dd-pss > div {
+  margin-bottom: 15px;
+}
+
+.flex-pss {
+  display: flex;
+  align-items: center;
+}
+
+.ico-pss {
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+  @include d(s) {
+    display: none;
+  }
+}
+
+.ws-form {
+  width: 100%;
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid $azul-piscina;
+    background: $azul-escuro;
+    color: $roxo;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all .6s;
+    &:active, &:hover, &:focus, &:focus-visible {
+      border: 2px solid $roxo;
+    }
+  }
+  textarea {
+    height: 120px;
+  }
+}
+
+.btn-form {
+  background: none;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.copy {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+  width: 0px !important;
+}
+

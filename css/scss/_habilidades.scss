@@ -1,0 +1,124 @@
+.habilidades {
+  padding: 60px 0;
+  background: $azul-escuro;
+  h1 {
+    color: $roxo;
+    margin-bottom: 30px;
+    @include d(s) {
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+.hb-container {
+  max-width: 947px;
+  margin: 0 auto;
+  @include d(m) {
+    max-width: $m-device; 
+  }
+  @include d(s) {
+    max-width: $s-device;
+  }
+}
+
+.ctn-skills {
+  display: grid;
+  grid-template-columns: 140px 795px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  align-items: center;
+  @include d(m) {
+    grid-template-columns: 120px 631px;
+  }
+  @include d(s) {
+    grid-template-columns: 320px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.hab-barr {
+  width: 100%;
+  background-color: $azul-hb;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: animation-bar 6s ease;
+}
+.skills{
+  text-align: right;
+  padding: 10px 0;
+}
+
+.hab-1, .hab-2, .hab-3, .hab-4, .hab-5, .hab-6, .hab-7, .hab-8, .hab-9, .hab-10, .hab-11, .hab-12  {
+  background: $azul-piscina;
+  border-radius: 10px;
+}
+
+//HTMl5
+.hab-1 {
+  width: 90%
+}
+
+//CSS3
+.hab-2 {
+  width: 85%;
+}
+
+//Flexbox
+.hab-3 {
+  width: 70%;
+}
+
+//Sass
+.hab-4 {
+  width: 70%;
+}
+
+//Bootstrap
+.hab-5 {
+  width: 60%
+}
+
+//JavaScript
+.hab-6 {
+  width: 50%;
+}
+
+//React
+.hab-7 {
+  width: 50%;
+}
+
+//Ui D
+.hab-8 {
+  width: 75%;
+}
+
+//UX D
+.hab-9 {
+  width: 75%;
+}
+
+//Adobe XD
+.hab-10 {
+  width: 65%;
+}
+
+//Photoshop
+.hab-11 {
+  width: 80%;
+}
+
+//Illustrator
+.hab-12 {
+  width: 65%;
+}
+
+@keyframes animation-bar {
+  0% { width: 0%; }
+    
+  100% { width: 100%}
+}

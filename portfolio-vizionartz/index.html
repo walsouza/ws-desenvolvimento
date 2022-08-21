@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script>document.documentElement.className += ' js';</script>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <title>Portfólio Profissional</title>
+  <meta name="description" content="Desenvolvedor Front End com mais de 5 anos de experiência. Tenha seu projeto desenvolvido por mim.">
+</head>
+<body>
+  
+  <header class="menu js-menu" id="header">
+    <div class="container">
+      <nav class="menu-nav" id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="../index.html" title="Minha Trajetória">Home</a></li>
+          <li><a href="../index.html" title="Minhas habilidades">Habilidades</a></li>
+          <li><a href="../index.html" title="Conheça meu trabalho">Portfólio</a></li>
+          <li><a href="#contato" title="Entre em contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="introducao intro-port js-scroll">
+    
+    <div class="container">
+      <h1 class="titulo-ws">WS</h1>
+      <p class="titulo-sub">Web Developer</p>
+    </div>
+  </main>
+  
+  <section class="sobre port-int js-scroll">
+    <div class="container">
+      <h1 class="fnt-56">Vizionartz</h1>
+      <p class="fnt-24">Site desenvolvido para agência</p>
+      
+      <a href="https://github.com/walsouza/vizionartz" class="btn-master btn-interno" target="_blank">Código GitHub</a>
+      <figure>
+        <img src="home.jpg">
+      </figure>
+      <p class="fnt-24">Galeria</p>
+      <figure>
+        <img src="interna.jpg">
+      </figure>
+      
+    </div>
+  </section>
+  
+  <footer class="contato js-scroll" id="contato">
+    <div class="container">
+      <div class="grid-6">
+        <h1 class="fnt-56">Contato</h1>
+        <h2 class="fnt-24">Manda uma mensagem e me conta do seu projeto.</h2>
+        
+        <a href="https://www.linkedin.com/in/walace-de-souza-70a37423b/" target="_blank"><img src="../img/linkedin-ico.png" class="ico-social margin"></a>
+        <a href="https://github.com/walsouza" target="_blank"><img src="../img/github-ico.png" class="ico-social"></a>
+        
+        <div class="dd-pss">          
+          
+          <div class="flex-pss">
+            <a href="mailto:walacesouza.web@gmail.com"><img src="../img/ico-mail.png" class="ico-pss"></a>
+          
+            
+            <p class="fnt-24"><span>walacesouza.web@gmail.com</span></p>
+          </div>
+          
+          
+          <div class="flex-pss">
+            <img src="../img/ico-location.png" class="ico-pss">
+            <p class="fnt-24">Rio de Janeiro | RJ</p>
+          </div>
+          
+        </div>
+        
+      </div>
+      <div class="grid-6">
+        <form class="ws-form" action="https://formspree.io/f/mnqrqwdb" method="POST" target="_blank">
+        
+          <label for="nome" class="form-label fnt-18">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required>
+          
+          <label for="email" class="form-label fnt-18">E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Insira seu e-mail" required>
+          
+          <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+		  <input type="text" class="nao-aparece" name="leaveblank">
+		  <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+		  <input type="text" class="nao-aparece" name="dontchange" value="http://">
+          
+          <label for="mensagem" class="form-textarea fnt-18">Mensagem</label>
+          <textarea id="mensagem" placeholder="Insira sua mensagem"  required></textarea>
+          <button type="submit" class="btn-master btn-form">Enviar</button>
+          
+        </form>
+      </div>
+    </div>
+    <div class="copy">
+      <p class="fnt-16">© Copyright 2022 WSwebdeveloper - All Rights Reserved</p>
+    </div>
+    
+  </footer>
+  
+  <script src="../js/menu-mobile.js"></script>
+  <script src="../js/animacoes.js"></script>
+</body>
+</html>

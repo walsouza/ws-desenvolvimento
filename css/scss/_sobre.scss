@@ -1,0 +1,37 @@
+.sobre {
+  padding: 60px 0;
+  background: $azul-medio;
+  position: relative;
+  h1 {
+    margin-top: 60px;
+  }
+  @include d(s) {
+    h2 {
+      line-height: 36px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }  
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.container-flex {
+  display: grid;
+  grid-template-columns: 15px 600px 626px 1fr;
+  max-width: 1280px;
+  margin: 0 auto;
+  grid-template-columns:  45% 50%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  @include d(m) {
+    grid-template-columns: 40% 50%;
+  }
+  @include d(s) {
+    grid-template-columns: 100%;
+    max-width: 320px;
+  }
+}

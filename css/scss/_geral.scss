@@ -1,0 +1,55 @@
+body {
+  background: $azul-escuro;
+  color: $branco;
+  font-family: $fonte-2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  @include tipo-2(18);
+}
+
+strong {
+  font-weight: 600;
+}
+
+.fnt-16 {
+  @include tipo-2(16);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.fnt-18 {
+  @include tipo-2(18);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.fnt-sbr {
+  @include tipo-2(24);
+  color: $roxo;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.fnt-24 {
+  @include tipo-2(24);
+  font-style: italic;
+  font-weight: 300;
+}
+.fnt-56 {
+  @include tipo-2(56);
+  font-style: italic;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.fnt-36 {
+  font-size: 36px;
+  font-style: italic;
+  display: inline-block;
+  font-weight: 100;
+  text-transform: none;
+}
