@@ -404,7 +404,6 @@ strong {
   font-family: "Wide awake";
   font-style: normal;
   font-weight: normal;
-  src: local("Wide awake"), url("Wide_awake.woff") format("woff");
   font-size: 11.625em;
   line-height: 1.06452em;
   color: #02d0d2;
